@@ -11,7 +11,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package kafka
+package etcd
 
 import (
 	"context"
@@ -38,7 +38,7 @@ type Binding struct {
 }
 
 // NewEtcd returns a new etcd binding instance.
-func NewEtcd(logger logger.Logger) bindings.InputOutputBinding {
+func NewEtcd(logger logger.Logger) bindings.OutputBinding {
 	return &Binding{logger: logger}
 }
 
